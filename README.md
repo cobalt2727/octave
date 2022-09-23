@@ -5,8 +5,8 @@ A Simple 3D Game Engine for GameCube, Wii, 3DS, Windows, and Linux
 1. Download and Install:
 	- Visual Studio Community 2017 (with C++ support)
 	- Vulkan SDK
-    - devkitPPC for GameCube/Wii development (Optional)
-    - devkitARM for 3DS development (Optional)
+	- devkitPPC for GameCube/Wii development (Optional)
+	- devkitARM for 3DS development (Optional)
 2. Build shaders by running compile.bat in Engine/Shaders/GLSL
 3. Open Octave.sln
 4. Switch to the DebugEditor solution configuration
@@ -19,11 +19,13 @@ A Simple 3D Game Engine for GameCube, Wii, 3DS, Windows, and Linux
 2. sudo apt-get install Make
 3. sudo apt-get install libx11-dev
 4. sudo apt-get install libasound2-dev
-5. Install Vulkan SDK
+5a. Install Vulkan SDK
     wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
     sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-focal.list http://packages.lunarg.com/vulkan/lunarg-vulkan-focal.list
     sudo apt update
     sudo apt install vulkan-sdk
+5b. If the Vulkan SDK isn't available...
+	- Build and install [shaderc](https://github.com/google/shaderc/#getting-and-building-shaderc)
 6. Install devkitPro Pacman for GameCube/Wii/3DS development (Optional) (https://devkitpro.org/wiki/devkitPro_pacman)
     wget https://apt.devkitpro.org/install-devkitpro-pacman
    chmod +x ./install-devkitpro-pacman
